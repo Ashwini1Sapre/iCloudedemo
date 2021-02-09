@@ -15,6 +15,10 @@
 		600CFCCE25D258E4006B5951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600CFCCC25D258E4006B5951 /* LaunchScreen.storyboard */; };
 		600CFCD925D258E4006B5951 /* iCloudedemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CFCD825D258E4006B5951 /* iCloudedemoTests.swift */; };
 		600CFCE425D258E4006B5951 /* iCloudedemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CFCE325D258E4006B5951 /* iCloudedemoUITests.swift */; };
+		600CFCFE25D25A30006B5951 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600CFCFD25D25A30006B5951 /* CloudKit.framework */; };
+		600CFD0025D25C86006B5951 /* ListElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CFCFF25D25C86006B5951 /* ListElement.swift */; };
+		600CFD0B25D25D80006B5951 /* ListElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CFD0A25D25D80006B5951 /* ListElements.swift */; };
+		600CFD1025D25E65006B5951 /* CloudkitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CFD0F25D25E65006B5951 /* CloudkitHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,11 @@
 		600CFCDF25D258E4006B5951 /* iCloudedemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCloudedemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		600CFCE325D258E4006B5951 /* iCloudedemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudedemoUITests.swift; sourceTree = "<group>"; };
 		600CFCE525D258E4006B5951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		600CFCF825D25A2C006B5951 /* iCloudedemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iCloudedemo.entitlements; sourceTree = "<group>"; };
+		600CFCFD25D25A30006B5951 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		600CFCFF25D25C86006B5951 /* ListElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListElement.swift; sourceTree = "<group>"; };
+		600CFD0A25D25D80006B5951 /* ListElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListElements.swift; sourceTree = "<group>"; };
+		600CFD0F25D25E65006B5951 /* CloudkitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudkitHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600CFCFE25D25A30006B5951 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +93,7 @@
 				600CFCD725D258E4006B5951 /* iCloudedemoTests */,
 				600CFCE225D258E4006B5951 /* iCloudedemoUITests */,
 				600CFCBF25D258E3006B5951 /* Products */,
+				600CFCFC25D25A30006B5951 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +110,14 @@
 		600CFCC025D258E3006B5951 /* iCloudedemo */ = {
 			isa = PBXGroup;
 			children = (
+				600CFCF825D25A2C006B5951 /* iCloudedemo.entitlements */,
 				600CFCC125D258E3006B5951 /* AppDelegate.swift */,
 				600CFCC325D258E3006B5951 /* SceneDelegate.swift */,
 				600CFCC525D258E3006B5951 /* ContentView.swift */,
 				600CFCC725D258E4006B5951 /* Assets.xcassets */,
+				600CFCFF25D25C86006B5951 /* ListElement.swift */,
+				600CFD0F25D25E65006B5951 /* CloudkitHelper.swift */,
+				600CFD0A25D25D80006B5951 /* ListElements.swift */,
 				600CFCCC25D258E4006B5951 /* LaunchScreen.storyboard */,
 				600CFCCF25D258E4006B5951 /* Info.plist */,
 				600CFCC925D258E4006B5951 /* Preview Content */,
@@ -134,6 +149,14 @@
 				600CFCE525D258E4006B5951 /* Info.plist */,
 			);
 			path = iCloudedemoUITests;
+			sourceTree = "<group>";
+		};
+		600CFCFC25D25A30006B5951 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				600CFCFD25D25A30006B5951 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +291,9 @@
 			files = (
 				600CFCC225D258E3006B5951 /* AppDelegate.swift in Sources */,
 				600CFCC425D258E3006B5951 /* SceneDelegate.swift in Sources */,
+				600CFD0B25D25D80006B5951 /* ListElements.swift in Sources */,
+				600CFD0025D25C86006B5951 /* ListElement.swift in Sources */,
+				600CFD1025D25E65006B5951 /* CloudkitHelper.swift in Sources */,
 				600CFCC625D258E3006B5951 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,9 +462,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iCloudedemo/iCloudedemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iCloudedemo/Preview Content\"";
-				DEVELOPMENT_TEAM = DD73F8592Z;
+				DEVELOPMENT_TEAM = 6G2HJ55BF8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iCloudedemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -447,6 +475,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = knoxpo.iCloudedemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -457,6 +486,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iCloudedemo/iCloudedemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iCloudedemo/Preview Content\"";
 				DEVELOPMENT_TEAM = DD73F8592Z;
@@ -466,7 +496,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = knoxpo.iCloudedemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knoxpo.iCloudedemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -479,7 +509,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DD73F8592Z;
+				DEVELOPMENT_TEAM = 6G2HJ55BF8;
 				INFOPLIST_FILE = iCloudedemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,7 +531,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DD73F8592Z;
+				DEVELOPMENT_TEAM = 6G2HJ55BF8;
 				INFOPLIST_FILE = iCloudedemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -522,7 +552,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DD73F8592Z;
+				DEVELOPMENT_TEAM = 6G2HJ55BF8;
 				INFOPLIST_FILE = iCloudedemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -542,7 +572,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DD73F8592Z;
+				DEVELOPMENT_TEAM = 6G2HJ55BF8;
 				INFOPLIST_FILE = iCloudedemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
